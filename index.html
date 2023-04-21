@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="CSS/style.css" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+  <style>
+    .carousel-item {
+      transition: transform 1s ease-in-out;
+    }
+    .carousel-fade .active.carousel-item-start,
+    .carousel-fade .active.carousel-item-end {
+      transition: opacity 0s 1s;
+    }
+
+  </style>
+
+</head>
+
+<body class=".bg-dark">
+<div>
+<!--NAV-->
+
+<nav class="nav">
+  <div class="container">
+      <div class="logo">
+          <a href="/index.html">M.L.D</a>
+      </div>
+      <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+              <li><a href="/about.html">About</a></li>
+              <!--<li><a href="#">Portfolio</a></li>
+              <li><a href="#">Services</a></li>-->
+              <li><a href="/contact.html">Contact</a></li>
+          </ul>
+      </div>
+      <span class="navTrigger">
+          <i></i>
+          <i></i>
+          <i></i> 
+      </span>
+  </div>
+</nav>
+
+
+<!--END OF NAV-->
+
+<section class="home">
+  <aside class="profile-card">
+    <header>
+      <div class="profile-box"><img src="images/profile.jpg">
+      <h1 class="fs-1">Meigar Larasati Dewi</h1>
+      <h2>Hello!</h2>
+      </div>
+    </header>
+    <div class="profilebiodiv">
+    <div class="profile-bio">
+      <p>You can call me Meigar. I'm an Indonesian <strong>Data Analyst, Data Researcher and Data Modeler</strong>. Making some cool things with coffee, code and complex thinking.</p>
+      <div class="social-icons">
+        <p><a href="https://www.google.com/"><i class="fa fa-behance"></i></a></p>
+        <p><a href="https://www.google.com/"><i class="fa fa-codepen"></i></a></p>
+        <p><a href="https://www.google.com/"><i class="fa fa-github"></i></a></p>
+        <p><a href="https://www.google.com/"><i class="fa fa-twitter"></i></a></p>
+      </div>
+    </div>
+  </div>
+  </aside>
+</section>
+
+
+
+<div class="expand">
+  
+</svg>
+<div class="hero">
+  <svg viewBox="0 0 100 20" preserveAspectRatio="none" fill="#fff">
+      <polygon points="0,0 100,0 0,20" />
+  </svg>
+</div>
+<!--
+  <section id="carouselIndicators" class="carousel slide module-border-wrap" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&h=800&q=80" data-color="lightblue" alt="First Image">
+        <div class="carousel-caption d-md-block">
+          <h5 class="fs-1">Data Driven Research</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://images.unsplash.com/photo-1538688273852-e29027c0c176?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&h=800&q=80" data-color="firebrick" alt="Second Image">
+        <div class="carousel-caption d-md-block">
+          <h5 class="fs-1">Data Analytics</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&h=800&q=80" data-color="violet" alt="Third Image">
+        <div class="carousel-caption d-md-block">
+          <div class="carousel-text">
+          <h5 class="fs-1">Data Cleansing</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+</div>
+-->
+
+
+
+<section id="carouselmain">
+<div id="drag-container">
+  <div id="spin-container">
+    <!-- Add your images (or video) here -->
+    <div onmouseover="autoplayoff()" onmouseout="autoplayon()" style="background-image: url(images/carousel/filter.png),url(images/carousel/DataCleansing.png)">
+      Data Cleansing
+    </div>
+    <div onmouseover="autoplayoff()" onmouseout="autoplayon()" style="background-image: url(images/carousel/filter.png),url(images/carousel/GoogleSuite.png)">
+      Google Suite
+    </div>
+    <div onmouseover="autoplayoff()" onmouseout="autoplayon()" style="background-image: url(images/carousel/filter.png),url(images/carousel/DataResearch.png)">
+      Data Research
+    </div>
+    <div onmouseover="autoplayoff()" onmouseout="autoplayon()" style="background-image: url(images/carousel/filter.png),url(images/carousel/HypothesisTesting.png)">
+      Hypothesis Testing
+    </div>
+    <div onmouseover="autoplayoff()" onmouseout="autoplayon()" style="background-image: url(images/carousel/filter.png),url(images/carousel/Python.png)">
+      Python
+    </div>
+    <div onmouseover="autoplayoff()" onmouseout="autoplayon()" style="background-image: url(images/carousel/filter.png),url(images/carousel/DataVisualisation.png)">
+      Data Visualisation
+    </div>
+    <div onmouseover="autoplayoff()" onmouseout="autoplayon()" style="background-image: url(images/carousel/filter.png),url(images/carousel/SQL.png)">
+      SQL
+    </div>
+    <div onmouseover="autoplayoff()" onmouseout="autoplayon()" style="background-image: url(images/carousel/filter.png),url(images/carousel/Tableau.png)">
+      Tableau
+    </div>
+    <div onmouseover="autoplayoff()" onmouseout="autoplayon()" style="background-image: url(images/carousel/filter.png),url(images/carousel/DataCleansing.png)">
+      Data Cleansing
+    </div>
+    <div onmouseover="autoplayoff()" onmouseout="autoplayon()" style="background-image: url(images/carousel/filter.png),url(images/carousel/GoogleSuite.png)">
+      Google Suite
+    </div>
+    <div onmouseover="autoplayoff()" onmouseout="autoplayon()" style="background-image: url(images/carousel/filter.png),url(images/carousel/DataResearch.png)">
+      Data Research
+    </div>
+    <div onmouseover="autoplayoff()" onmouseout="autoplayon()" style="background-image: url(images/carousel/filter.png),url(images/carousel/HypothesisTesting.png)">
+      Hypothesis Testing
+    </div>
+    <div onmouseover="autoplayoff()" onmouseout="autoplayon()" style="background-image: url(images/carousel/filter.png),url(images/carousel/Python.png)">
+      Python
+    </div>
+    <div onmouseover="autoplayoff()" onmouseout="autoplayon()" style="background-image: url(images/carousel/filter.png),url(images/carousel/DataVisualisation.png)">
+      Data Visualisation
+    </div>
+    <div onmouseover="autoplayoff()" onmouseout="autoplayon()" style="background-image: url(images/carousel/filter.png),url(images/carousel/SQL.png)">
+      SQL
+    </div>
+    <div onmouseover="autoplayoff()" onmouseout="autoplayon()" style="background-image: url(images/carousel/filter.png),url(images/carousel/Tableau.png)">
+      Tableau
+    </div>
+    <!--<img onmouseover="autoplayoff()" onmouseout="autoplayon()" src="images/carousel/Tableau.png" alt="">
+    
+
+    <a target="_blank" href="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg">
+      <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+    </a>
+
+    <!-- Text at center of ground -->
+    <p></p>
+  </div>
+  <div id="ground"></div>
+</div>
+
+<div id="music-container"></div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Fold Footer-->
+<div class="waveyBoi">
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+  <defs>
+  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+  </defs>
+  <g class="parallax">
+  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,1" />
+  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.6)" />
+  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.4)" />
+  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.2)" />
+  </g>
+
+
+  </div>
+<!--End of Fold Footer-->
+
+<footer>
+    <p>© Jeffrey Boehme 2022</p>
+</footer>
+</div>
+
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+<script src="JS/dostuff.js"></script>
+<script src="JS/navbar.js"></script>
+<script src="JS/carousel.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+<script>
+</script>
+
+</html>
+
+
