@@ -55,7 +55,7 @@ function init(delayTime) {
 function applyTranform(obj) {
   // Constrain the angle of camera (between 0 and 180)
   if(tY > 180) tY = 180;
-  if(tY < 0) tY = 0;
+  tY = 10;
 
   // Apply the angle
   obj.style.transform = "rotateX(" + (-tY) + "deg) rotateY(" + (tX) + "deg)";
