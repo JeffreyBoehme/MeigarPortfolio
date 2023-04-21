@@ -110,18 +110,14 @@ document.onpointerdown = function (e) {
   this.onpointermove = function (e) {
     e = e || window.event;
     var nX = e.clientX,
-        nY = e.clientY;
     desX = nX - sX;
-    desY = nY - sY;
     tX += desX * 0.1;
     applyTranform(odrag);
     sX = nX;
-    sY = nY;
   };
 
   this.onpointerup = function (e) {
     odrag.timer = setInterval(function () {
-      desX *= 0.95;
       tX += desX * 0.1;
       applyTranform(odrag);
       playSpin(false);
