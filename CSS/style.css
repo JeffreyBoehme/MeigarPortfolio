@@ -1960,10 +1960,11 @@ top:calc(0px + 70%);
 
     }
     #spin-container div {
-
+      padding:0px 0px 0px 5px;
+      line-height: 275px;
       width: 95px;
       height: 150px;
-      
+      font-size: 10px;
     }
     
 
