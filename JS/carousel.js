@@ -6,7 +6,7 @@
 
 
 // You can change global variables here:
-var radius = 500; // how big of the radius
+var radius = 300; // how big of the radius
 var autoRotate = true; // auto rotate or not
 var rotateSpeed = -60; // unit: seconds/360 degrees
 var imgWidth = 120; // width of images (unit: px)
@@ -114,7 +114,6 @@ document.onpointerdown = function (e) {
     desX = nX - sX;
     desY = nY - sY;
     tX += desX * 0.1;
-    tY += desY * 0.1;
     applyTranform(odrag);
     sX = nX;
     sY = nY;
@@ -123,9 +122,7 @@ document.onpointerdown = function (e) {
   this.onpointerup = function (e) {
     odrag.timer = setInterval(function () {
       desX *= 0.95;
-      desY *= 0.95;
       tX += desX * 0.1;
-      tY += desY * 0.1;
       applyTranform(odrag);
       playSpin(false);
       if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
