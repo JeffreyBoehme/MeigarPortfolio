@@ -1959,4 +1959,13 @@ top:calc(0px + 70%);
     top:100%;
 
     }
-}
+    #spin-container div {
+
+      width: 95px;
+      height: 150px;
+      
+    }
+    
+
+  }
+
