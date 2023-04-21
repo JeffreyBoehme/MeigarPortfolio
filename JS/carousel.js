@@ -94,20 +94,32 @@ function autoplayon() {
 }
 
 
+function tap(e) {
 
 
+}
 
 
-
+$(window).scroll(function() {
+  var hT = $('#scroll-to').offset().top,
+      hH = $('#scroll-to').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+  if (wS > (hT+hH-wH)){
+      console.log('H1 on the view!');
+  }
+});
 
 // setup events
 document.onpointerdown = function (e) {
+
   clearInterval(odrag.timer);
   e = e || window.event;
   var sX = e.clientX,
       sY = e.clientY;
 
   this.onpointermove = function (e) {
+
     e = e || window.event;
     var nX = e.clientX,
     desX = nX - sX;
@@ -117,6 +129,7 @@ document.onpointerdown = function (e) {
   };
 
   this.onpointerup = function (e) {
+
     odrag.timer = setInterval(function () {
       tX += desX * 0.1;
       applyTranform(odrag);
