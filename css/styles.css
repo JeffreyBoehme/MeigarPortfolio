@@ -174,7 +174,7 @@
   // this css will only be used when the screen size is min 800px
 }
 #cards {
-
+    overflow:scroll;
     flex:auto;
 }
 
