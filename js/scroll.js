@@ -40,4 +40,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Attach the handler
     ele.addEventListener('mousedown', mouseDownHandler);
+
+    window.stopScript = function () {
+        ele.removeEventListener('mousedown', mouseDownHandler);
+        document.removeEventListener('mousemove', mouseMoveHandler);
+        document.removeEventListener('mouseup', mouseUpHandler);
+    };
 });
