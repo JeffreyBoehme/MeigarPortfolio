@@ -174,12 +174,13 @@
   // this css will only be used when the screen size is min 800px
 }
 #cards {
-    overflow: hidden;
+
     flex:auto;
 }
 
 @media (hover: hover) {
   #cards {
+    overflow: hidden;
     cursor: grab;
   }
   #cardsinner {
