@@ -1,0 +1,425 @@
+<!-- Write the homepage of a portfolio website using common components from bootstrap 5 -->
+<!-- Use the following components: -->
+<!-- Navbar -->
+<!-- full page Hero -->
+<!-- Jumbotron -->
+<!-- Cards -->
+<!-- Footer -->
+<!-- Use the following classes: -->
+<!-- Container -->
+<!-- Row -->
+<!-- Col -->
+<!-- Card -->
+<!-- Card-body -->
+<!-- Card-title -->
+<!-- Card-text -->
+<!-- Card-img -->
+
+<!-- Path: index.html -->
+<!-- Compare this snippet from html: -->
+
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/contact.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!-- Navbar -->
+
+            <!-- Navbar -->
+            <nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-center">
+                <div class="container nav-margin">
+                        <a class="navbar-brand d-flex w-50 me-auto navlogo" href="/index.html">M.L.D</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                        <ul class="navbar-nav w-100 justify-content-between">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/work.html">Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about.html">About</a>
+                            </li>
+
+                        </ul>
+                        <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/index.html">Home</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Hero -->
+            <div class="p-5 text-center bg-image" style="
+            background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80');
+            height: 60%; background-repeat: no-repeat; background-size: cover; background-position: center center;
+            
+          ">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div id="profile">
+                    <div id="profile-bio">
+                       <center><img id="profile-photo" src="images/profile.jpg"></center>
+                       <div class="profile-box">
+                        <h1 class="fs-4">Meigar Larasati Dewi</h1>
+                        <h2 class="fs-5">Hello!</h2>
+                        </div>
+
+                      <div class="profilebiodiv">
+                      <div class="profile-bio">
+                        <p>You can call me Meigar. I'm an Indonesian <strong>Data Analyst, Data Researcher and Data Modeler</strong>. Making some cool things with coffee, code and complex thinking.</p>
+                        <div class="social-icons">
+                          <p><a href="https://www.google.com/"><i class="fa fa-codepen"></i></a></p>
+                          <p><a href="https://www.google.com/"><i class="fa fa-github"></i></a></p>
+                          <p><a href="https://www.google.com/"><i class="fa fa-twitter"></i></a></p>
+                          <p><a href="https://www.linkedin.com/in/meigar-s-pd-616434166/" role="button"><i class="fab fa-linkedin-in"></i></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+          </header>
+
+          <div class="container-fluid py-2">
+            <div id="cards" class="card-wrapper overflow-hidden">
+            <div id="cardsinner" class="d-flex flex-row overflow-hidden">
+                <div class="card card-body slide-body"
+                    style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1630&q=80')">
+                        <div class="cardinfo">
+                            <h3>Data Visualization</h3>
+                            <ul class="list">
+                                <li>Design Thinking Framework</li>
+                                <li>Analyze, model and interpret data</li>
+                                <li>Best Practices and Tools for Data Visualization</li>
+                                <li>Using Various Tools for Data Visualization to become a tool-agnostic data analyst</li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="card card-body slide-body"
+                    style="background-image:url('https://images.unsplash.com/photo-1601795378251-664219a9747c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80')">
+                    <div class="cardinfo">
+                        <h3>Tableau</h3>
+                        <ul class="list">
+                            <li>Tableau Mastery and Operations</li>
+                            <li>Using Tableau to Visualize Data and Create Dashboards</li>
+                            <li>Implementing data visualization to various business use cases</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card card-body slide-body" 
+                    style="background-image:url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80')">
+                    <div class="cardinfo">
+                        <h3>Python</h3>
+                        <ul class="list">
+                            <li>Working with Github, Jupyter Notebooks and IDEs</li>
+                            <li>Data Wrangling with Pandas, NumPy</li>
+                            <li>Hypothesis testing and A/B testing with Python</li>
+                            <li>Create Python analytics solution</li>
+                            <li>Knowledge of the different stages of exploratory data analysis and how to create interactive dashboards with Python</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card card-body slide-body"
+                    style="background-image:url('https://images.unsplash.com/photo-1483736762161-1d107f3c78e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80')">
+                    <div class="cardinfo">
+                        <h3>SQL</h3>
+                        <ul role="list">
+                            <li>In-Depth Understanding of Databases, Relational Databases and Structures</li>
+                            <li>Creating Tables and Ingesting Data with SQL</li>
+                            <li>Preparing, exploring, and analyzing large dataset with SQL queries</li>
+                            <li>Using SQL Syntax, Queries to Solve Business Cases in startups</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card card-body slide-body"
+                    style="background-image:url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80')">
+                    <div class="cardinfo">
+                        <h3>Insight Communication</h3>
+                        <ul role="list">
+                            <li>Generating insights from data and communicating insights</li>
+                            <li>Creating Effective Data Presentation the Consulting Way</li>
+                            <li>Pitching and Storytelling with Data</li>
+                            <li>Writing narratives and end-to-end data project management</li>
+                        </ul>
+                    </div>
+                </div>
+            <!--
+                <div class="card card-body slide-body"
+                    style="background-image:url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80')">
+                    <div class="cardinfo">
+                        <h3>Card</h3>
+                        <p>Card</p>
+                    </div>
+                </div>
+                <div class="card card-body slide-body"
+                    style="background-image:url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80')">
+                    <div class="cardinfo">
+                        <h3>Card</h3>
+                        <p>Card</p>
+                    </div>
+                </div>
+                <div class="card card-body slide-body"
+                    style="background-image:url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80')">
+                    <div class="cardinfo">
+                        <h3>Card</h3>
+                        <p>Card</p>
+                    </div>
+                </div>
+                <div class="card card-body slide-body"
+                    style="background-image:url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80')">
+                    <div class="cardinfo">
+                        <h3>Card</h3>
+                        <p>Card</p>
+                    </div>
+                </div>
+                <div class="card card-body slide-body"
+                    style="background-image:url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80')">
+                    <div class="cardinfo">
+                        <h3>Card</h3>
+                        <p>Card</p>
+                    </div>
+                </div>
+                <div class="card card-body slide-body">
+                    <div class="cardinfo">
+                        <h3>Card</h3>
+                        <p>Card</p>
+                    </div>
+                </div>
+            -->
+                <!-- Adjust the width of #cardsinner to adjust the width of tiles -->
+            </div>
+        </div>
+        </div>
+
+
+        <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+              <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h1 class="display-4 fw-bold lh-1">Trending Video Analysis Dashboard</h1>
+                <p class="lead">See our in depth dashboard analysing Trending Videos by Country, Category, and Engagement Metrics.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                  <a href="https://public.tableau.com/app/profile/meigar.larasati.dewi/viz/10CountriesUpdate_16807380424400/Dashboard1?publish=yes" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" role="button">Dashboard</a>
+                  <a href="#linkToCaseStudy.html" class="btn btn-outline-secondary btn-lg px-4" role="button">Case Study</a>
+                </div>
+              </div>
+              <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg heroimagecard">
+                  <img class="rounded-lg-3 heroimage" src="images/tableau.png" alt="" width="720">
+              </div>
+            </div>
+          </div>
+
+          <div class="container my-5">
+            <div class="row p-4 pb-0 ps-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="col-lg-4 p-0 overflow-hidden shadow-lg heroimagecard">
+                    <img class="rounded-lg-3 heroimage" src="images/samba.png" alt="" width="720">
+                </div>
+              <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h1 class="display-4 fw-bold lh-1">Samba eCommerce dashboard Case Study</h1>
+                <p class="lead">Executives need detailed information from the dashboard about current statistics including number of Customers, Sellers, Orders, and the performance of products.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                  <a href="https://lookerstudio.google.com/reporting/1cb49356-6a71-4e15-a82d-54ba7f4b43de" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" role="button">Dashboard</a>
+                  <a href="https://docs.google.com/presentation/d/1BH0s5xRhzzShtl3YBlAk5E98vPhLwYV_QaHyZHhucAY/edit#slide=id.p" class="btn btn-outline-secondary btn-lg px-4" role="button">Case Study</a>
+                
+
+                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+              <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <h1 class="display-4 fw-bold lh-1">Data Analysis with Pandas and Python</h1>
+                <p class="lead">See my step by step work cleansing and analysing data in Python using Pandas and Numpy.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" html="https://colab.research.google.com/drive/11fc9J3ZdySy2Zp37Jo1AMWMvfqg0ylvs?usp=sharing">Google Colabs</button>
+
+                </div>
+              </div>
+              <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg heroimagecard">
+                  <img class="rounded-lg-3 heroimage" src="images/python.png" alt="" width="720">
+              </div>
+            </div>
+          </div>
+
+
+
+<!--
+        <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">INFO SECTION</h1>
+            <p class="lead">
+            This is a simple hero unit, a simple jumbotron-style component for
+            calling extra attention to featured content or information.
+            </p>
+            <hr class="my-4" />
+            <p>
+            It uses utility classes for typography and spacing to space content
+            out within the larger container.
+            </p>
+            <a class="btn btn-primary btn-lg" href="#" role="button"
+            >Learn more</a
+            >
+        </div>
+        </div>
+        <div class="container">
+        <div class="row">
+            <div class="col">
+            <div class="card" style="width: 18rem">
+                <img
+                src="https://picsum.photos/200/300?random=1"
+                class="card-img-top"
+                alt="..."
+                />
+                <div class="card-body">
+
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, voluptatum.
+
+                </p>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="card" style="width: 18rem">
+                <img
+                src="https://picsum.photos/200/300?random=2"
+                class="card-img-top"
+                alt="..."
+                />
+                <div class="card-body">
+
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, voluptatum.
+
+                </p>
+                </div>
+
+            </div>
+            </div>
+            <div class="col">
+            <div class="card" style="width: 18rem">
+                <img
+                src="https://picsum.photos/200/300?random=3"
+                class="card-img-top"
+                alt="..."
+                />
+                <div class="card-body">
+
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam, voluptatum.
+
+                </p>
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+        </div>
+
+    -->
+
+
+
+        <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+            <!-- Facebook -->
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-facebook-f"></i
+            ></a>
+
+            <!-- Twitter -->
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-twitter"></i
+            ></a>
+
+            <!-- Google -->
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-google"></i
+            ></a>
+
+            <!-- Instagram -->
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-instagram"></i
+            ></a>
+
+            <!-- Linkedin -->
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="https://www.linkedin.com/in/meigar-s-pd-616434166/"
+                role="button"
+                ><i class="fab fa-linkedin-in"></i
+            ></a>
+
+            <!-- Github -->
+            <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-github"></i
+            ></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Section: Links -->
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2023 All rights reserved: Meigar Larasati Dewi
+
+        </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/574add0346.js" crossorigin="anonymous"></script>
+        <script src="js/scroll.js"></script>
+        <script src="js/contact.js"></script>
+        <script>
+
+        </script>
+    </body>
+</html>
+
+<!-- With this one: -->
+
