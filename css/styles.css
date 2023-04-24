@@ -1,6 +1,13 @@
-.navlogo {
+body{
+  padding-top:85px;
+}
 
-  }
+.footergap{
+height:135px;
+min-height:135px;
+}
+
+
 
   .navlogo{
     font-family: 'Libre Baskerville', serif !important;
@@ -23,22 +30,23 @@
     font-size: clamp(21px, 1.6vw, 2.2rem);
 }
 
-.nav-margin{
-    
+
+
+.navgap{
+  height:90px;
 }
 
 
 
+
 #profile {
-    margin: 0 auto;
     margin-top: 80px;
-    width: 400px;
+    max-width: 500px;
   }
   
   #profile-bio {
-    background: #ffffff;
     width: 100%;
-    padding: 15px;
+    padding: 25px;
     border-radius: 5px;
   }
   
@@ -66,13 +74,22 @@
     
 }
 
+.workbackground{
+  height: 60%;
+  width:100%;
+  background-image:url('https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+z-index:-1 !important;
+top: 0px;
+background-size:cover;
+background-repeat: no-repeat; 
+background-position: center center;
+}
+
 .projects{
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-.heroimage{
 
-}
 
 .rounded-3{
     overflow:hidden;
@@ -112,19 +129,19 @@
     width:calc(100% + .1rem);
     background:rgba(0,0,0,0.5);
     color:white;
-    padding:10px 10px 10px 10px;
+    padding:2rem;
     text-align:center;
     font-size:1.2rem;
     text-transform:uppercase;
     letter-spacing:1px;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     Text-align:left;
-    max-height: 73px;
+    max-height: calc(73px + 1.2rem);
     -webkit-transition: 2s;
     -moz-transition: 2s;
     -o-transition: 2s;
     transition: 2s !important;
-    
+    border-radius:15px;
 }
 
 .cardinfo:hover{
@@ -138,7 +155,7 @@
 }
 
 .cardinfo h3{
-    font-size: clamp(24px, 3vw, 35px);
+    font-size: clamp(17px, 2.36vw, 35px);
     height:63px;
     font-weight:700;
     margin-bottom:0px;
@@ -170,9 +187,7 @@
 
 }
 
-@media screen and (min-width: 800px) {
-  // this css will only be used when the screen size is min 800px
-}
+
 #cards {
     overflow:scroll !important;
     flex:auto;
@@ -236,3 +251,5 @@
   .social-icons .fab:active {
     font-size: 4em;
   }
+
+  

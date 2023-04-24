@@ -1,0 +1,10 @@
+To do
+Create live pages for contact, work, about
+Update links on nav bar
+
+Create all components for other pages
+create formspree form and update contact box
+add the rest of the projects
+Sort the project cards
+add work link to project cards on homepage
+
