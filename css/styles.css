@@ -74,16 +74,7 @@ min-height:135px;
     
 }
 
-.workbackground{
-  height: 60%;
-  width:100%;
-  background-image:url('https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
-z-index:-1 !important;
-top: 18%;
-background-size:cover;
-background-repeat: no-repeat; 
-background-position: center center;
-}
+
 
 .projects{
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
@@ -93,6 +84,10 @@ background-position: center center;
 
 .rounded-3{
     overflow:hidden;
+}
+
+.card-wrapper{
+  width:100%;
 }
 
 .heroimagecard:hover{
@@ -189,7 +184,7 @@ background-position: center center;
 
 
 #cards {
-    overflow:scroll !important;
+    overflow-x:scroll !important;
     flex:auto;
 }
 
@@ -212,13 +207,42 @@ background-position: center center;
 
     min-width:125px !important;
     display: flex;
+    min-height:64px;
     flex-direction: row !important;
     flex-wrap: wrap !important;
     justify-content:space-around;
 
   }
   
+.social-icons p{
+  
+  margin-bottom:0px !important;
+  width:65px;
+  height:65px;
+  justify-content:center;
+  align-items:center;
+}
+
+.social-icons p a{
+  display:block;
+  margin-bottom:0px !important;
+  width:65px;
+  height:65px;
+  text-decoration: none;
+}
+.social-icons p a i{
+  display:flex;
+  margin-bottom:0px !important;
+  width:65px;
+  height:65px;
+}
+
+
   .social-icons .fa {
+    width:65px;
+    height:65px;
+    justify-content:center;
+    align-items:center;
     font-size: 2.5em;
     text-align: center;
     color: #fdbbaf;
@@ -235,7 +259,8 @@ background-position: center center;
 
   .social-icons .fab {
     font-size: 2.5em;
-    text-align: center;
+    justify-content:center;
+    align-items:center;
     color: #fdbbaf;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -251,3 +276,75 @@ background-position: center center;
   span.blockspam {
     display: none;
   }
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+
+  .workbackground{
+    height: 100%;
+    width:100%;
+  z-index:-1 !important;
+  top: 0px;
+  background-size:cover;
+  background-repeat: no-repeat; 
+  background-position: center center;
+  }
+
+
+
+#aboutbox{
+  max-width:1200px !important;
+}
+
+ .workbackground, .contentwrapper  {
+    
+  background-size:cover;
+        -webkit-animation: slidein 20s;
+        animation: slidein 20s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;              
+}
+
+@-webkit-keyframes slidein {
+from {background-position: center; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: center;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
