@@ -15,19 +15,18 @@ min-height:135px;
   }
 
 #collapsingNavbar3{
-    font-family: 'Libre Baskerville', serif !important;
     font-size:1.5rem !important;
     font-weight:400 !important;
 }
 
 .nav-item{
     font-weight:400;
-    font-size: clamp(20px, 1.5vw, 1.8rem);
+    font-size: clamp(20px, 2vw, 1.8rem);
 }
 
-.nav-item.active{
-    font-weight:600;
-    font-size: clamp(21px, 1.6vw, 2.2rem);
+.nav-link.active{
+  font-weight:600;
+  font-size: clamp(21px, 2vw, 2.2rem);
 }
 
 
@@ -285,16 +284,20 @@ min-height:135px;
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
+  
+  background: rgba(0, 0, 0, 0);
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0);
+  
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: rgba(0, 0, 0, 0.119);
+  border-radius: 25px;
 }
 
 /* Handle on hover */
@@ -325,8 +328,8 @@ min-height:135px;
  .workbackground, .contentwrapper  {
     
   background-size:cover;
-        -webkit-animation: slidein 20s;
-        animation: slidein 20s;
+        -webkit-animation: slidein 30s;
+        animation: slidein 30s;
 
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
@@ -347,4 +350,15 @@ to {background-position: -100px 0px;background-size:2750px;}
 from {background-position: center;background-size:3000px; }
 to {background-position: -100px 0px;background-size:2750px;}
 
+}
+
+
+
+.transition-fade {
+  transition: all 1s ease-in-out;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
 }
