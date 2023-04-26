@@ -362,3 +362,18 @@ to {background-position: -100px 0px;background-size:2750px;}
 html.is-animating .transition-fade {
   opacity: 0;
 }
+
+
+.tableau{
+  height:28px;
+  width:28px;
+  -webkit-filter: invert(.75); /* safari 6.0 - 9.0 */
+  filter: invert(.75);
+}
+.tableaubutton{
+  padding-left:5px !important;
+  padding-right:5px !important;
+  padding-top:0px !important;
+  padding-bottom:0px !important;
+
+}

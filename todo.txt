@@ -1,7 +1,7 @@
 To do
 Update social links in footer and profile
 update text in about
-clean up homepage - remove some work tiles to drive people to main ones
-create formspree account for may and create a form and update contact box
-Sort the project cards
 
+
+
+Fix Tableau button
