@@ -256,6 +256,15 @@ min-height:135px;
     font-size: 4em;
   }
 
+  .social-icons .tableautop:hover,
+  .social-icons .tableautop:active {
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    
+  }
+
   .social-icons .fab {
     font-size: 2.5em;
     justify-content:center;
@@ -376,4 +385,11 @@ html.is-animating .transition-fade {
   padding-top:0px !important;
   padding-bottom:0px !important;
 
+}
+
+.tableautop{
+  height:65px;
+  width:65px;
+  padding:12.5px;
+  
 }
